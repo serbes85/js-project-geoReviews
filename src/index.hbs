@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=&lang=ru_RU"
+        type="text/javascript">
+        </script>
+    <title>Geo reviews</title>
+</head>
+
+<body>
+    <div id='map' class='map'></div>
+    <div class="wrapper">
+        <header class="header">
+            <div class="marker">
+                <svg width="15" height="15">
+                    <use xlink:href="img/sprite.svg#loupe"></use>
+                </svg>
+            </div>
+            <div class="adress">Default adress</div>
+            <div class="button-close">
+                <svg width="25" height="25">
+                    <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+            </div>
+        </header>
+        <section class='section-comment'>
+            <div class="list-comments">
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="title">
+                <p>ваш отзыв</p>
+            </div>
+            <form class="form">
+                <input id="input-name" class='input' type="text" placeholder="Ваше имя" required>
+                <input id="input-place" class='input' type="text" placeholder="Укажите место" required>
+                <textarea id="input-comment" class='textarea' placeholder="Ваш отзыв"></textarea>
+                <button class="add-comment">Добавить</button>
+            </form>
+        </section>
+    </div>
+    <div class="slider" style="left: -9999px">
+        <div class="slider-close">x</div>
+        <div class="back">&lt;</div>
+        <div class="slider-content">
+            <div class="wrap-ul">
+                <ul class="slider-list" style="left:0%">
+                    <li class="list-elem">
+                        <div class="slider-place">Default</div>
+                        <div class="slider-adr">Default</div>
+                        <div class="slider-comment">Default</div>
+                        <div class="slider-date">Default</div>
+                        <ul class="paginator">
+                            <li class="paginator-elem paginator--current">1</li>
+                            <li class="paginator-elem">2</li>
+                            <li class="paginator-elem">3</li>
+                        </ul>
+                    </li>
+                    <li class="list-elem">2</li>
+                    <li class="list-elem">3</li>
+                </ul>
+            </div>
+        </div>
+        <div class="forward">&gt;</div>
+    </div>
+    {{!-- <script src="./geoReviews.js"></script> --}}
+</body>
+
+</html>

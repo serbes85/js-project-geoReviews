@@ -1,0 +1,32 @@
+.header {
+    height: 45px;
+    background-color: #ff8663;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.marker {
+    margin-left: 10px;
+}
+
+.marker svg {
+    fill: #fff;
+    stroke: #fff;
+}
+
+.adress {
+    flex-grow: 2;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.button-close {
+    margin-right: 10px;
+    cursor: pointer;
+   
+}
+
+.button-close svg {
+    fill: #fff;
+}
